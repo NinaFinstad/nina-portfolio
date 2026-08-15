@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Highcharts Course Portal – bransjeprosjekt utviklet i samarbeid med Highsoft."
+    >
+
+    <title>Highcharts Course Portal | Nina Finstad</title>
+
+    <!-- Fonter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="js/highsoft.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <span class="logo-short">NF</span>
+                <span class="logo-full">Nina Finstad</span>
+            </a>
+        </div>
+
+        <nav class="site-nav" aria-label="Hovedmeny">
+            <a href="index.html#projects">Prosjekter</a>
+            <a href="index.html#about">Om meg</a>
+            <a href="index.html#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Prosjektintroduksjon -->
+        <section class="project-hero">
+            <div class="project-hero-layout">
+
+                <div class="project-hero-text">
+                    <span class="project-label">
+                        Bransjeprosjekt i samarbeid med Highsoft
+                    </span>
+
+                    <h1>Highcharts Course Portal</h1>
+
+                    <p>
+                        Highsoft ga oss en åpen case knyttet til deres digitale læringsunivers. Vi undersøkte hvordan en kursplattform kunne gjøre det enklere å finne relevante kurs,
+                        forstå hva man skulle lære og holde motivasjonen oppe gjennom hele læringsløpet.
+
+                    </p>
+
+                    <p>
+                        Researchen viste at brukerne først og fremst trengte tydelig struktur, oversikt over nivå og tidsbruk og synlig progresjon. På bakgrunn av dette utviklet vi en responsiv kursplattform med søk og filtrering, 
+                        en kursanbefalingsquiz, oversiktlige læringsløp og støtte for å følge egen progresjon.
+                    </p>
+                </div>
+
+                <button
+                    class="project-visual-card case-image-button"
+                    type="button"
+                    data-lightbox-image="highsoft-images/Skjermbilde 2026-05-29 133641.png"
+                    data-lightbox-alt="Den ferdig utviklede landingssiden til Highcharts Course Portal"
+                    aria-label="Åpne bildet av den ferdige landingssiden"
+                >
+                    <img
+                        src="highsoft-images/Skjermbilde 2026-05-29 133641.png"
+                        alt="Den ferdig utviklede landingssiden til Highcharts Course Portal"
+                    >
+                </button>
+
+            </div>
+        </section>
+
+        <!-- Prosjektoversikt -->
+        <section class="project-meta-section">
+            <div class="section-heading">
+                <h2>Prosjektoversikt</h2>
+            </div>
+
+            <div class="project-meta-grid">
+
+                <article class="meta-card">
+                    <h3>Oppdragsgiver</h3>
+                    <p>Highsoft</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Prosjekttype</h3>
+                    <p>Bransjeprosjekt</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Periode</h3>
+                    <p>August–mai 2026</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Team</h3>
+                    <p>Fire studenter</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Min rolle</h3>
+                    <p>UX og fullstackutvikling</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Metoder</h3>
+                    <p>Brukerinnsikt, prototyping og brukertesting</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Design</h3>
+                    <p>Figma, FigJam og designsystem</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Teknologi</h3>
+                    <p>HTML, CSS, JavaScript, Flask, Jinja2 og SQLite</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Utfordring og brukerinnsikt -->
+        <section class="case-section case-section-muted">
+            <div class="case-section-heading">
+                <span class="case-eyebrow">01 · Innsikt</span>
+                <h2>Fra brukerbehov til tydelig retning</h2>
+
+                <p>
+                    For å forstå hva som skaper en god digital læringsopplevelse, 
+                    gjennomførte vi en spørreundersøkelse og intervjuet åtte personer med ulik bakgrunn og 
+                    erfaring med nettkurs. Funnene viste tre gjennomgående behov.
+                </p>
+            </div>
+
+            <div class="case-insight-grid">
+
+                <article class="case-insight-card">
+                    <span>01</span>
+                    <h3>En tydelig start</h3>
+                    <p>
+                    Brukerne ønsket klare læringsmål, 
+                    forventet tidsbruk og oversikt over kursets innhold før de startet.
+                    </p>
+                </article>
+
+                <article class="case-insight-card">
+                    <span>02</span>
+                    <h3>Synlig progresjon</h3>
+                    <p>
+                        Tydelig kursstruktur, milepæler og synlig 
+                        fremdrift var viktig for motivasjonen og gjorde det lettere å fortsette etter et avbrekk.
+                    </p>
+                </article>
+
+                <article class="case-insight-card">
+                    <span>03</span>
+                    <h3>Relevant innhold</h3>
+                    <p>
+                        Brukerne ønsket praktisk 
+                        og variert innhold og en enkel måte å finne kurs tilpasset nivå, tema og tilgjengelig tid.
+                    </p>
+                </article>
+
+                <div class="case-challenge">
+    <span class="case-challenge-label">Definert utfordring</span>
+
+    <p class="case-challenge-text">
+        Hvordan kan vi gjøre det enklere å finne riktig kurs, forstå
+        læringsløpet og bevare motivasjonen fra oppstart til fullføring?
+    </p>
+</div>
+
+            </div>
+
+            <div class="case-process-grid">
+
+                <figure class="case-process-item">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Personas-highsoft.png"
+                        data-lightbox-alt="To personas utviklet på bakgrunn av brukerintervjuene"
+                        aria-label="Åpne personas i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/Personas-highsoft.png"
+                            alt="To personas utviklet på bakgrunn av brukerintervjuene"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        Innsikten ble samlet i to personas med ulike behov,
+                        motivasjoner og læringsvaner.
+                    </figcaption>
+                </figure>
+
+                <figure class="case-process-item">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Userjourneymap-highsoft.png"
+                        data-lightbox-alt="Brukerreise fra oppdagelse av kurs til gjennomføring"
+                        aria-label="Åpne brukerreisen i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/Userjourneymap-highsoft.png"
+                            alt="Brukerreise fra oppdagelse av kurs til gjennomføring"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        Brukerreisen synliggjorde friksjon og muligheter fra
+                        første møte med plattformen til fullført kurs.
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Struktur og løsningsvalg -->
+        <section class="case-section">
+            <div class="case-two-column">
+
+                <div class="case-copy">
+                    <span class="case-eyebrow">02 · Struktur</span>
+                    <h2>Fra bredt konsept til tydelig kjerneflyt</h2>
+
+                    <p>
+                        Med utgangspunkt i brukerinnsikten avgrenset vi løsningen til en gjennomførbar MVP med fire hovedsteg: finne kurs, velge kurs, 
+                        gjennomføre læringsløpet og få bekreftet fullføring. Informasjonsarkitekturen prioriterer enkel navigasjon, 
+                        tydelig kursstruktur og synlig progresjon.
+                    </p>
+
+                    
+                </div>
+
+                <figure class="case-process-item">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/IA-highsoft.png"
+                        data-lightbox-alt="Informasjonsarkitekturen til Highcharts Course Portal"
+                        aria-label="Åpne informasjonsarkitekturen i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/IA-highsoft.png"
+                            alt="Informasjonsarkitekturen til Highcharts Course Portal"
+                            loading="lazy"
+                        >
+                    </button>
+
+                
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Testing og iterasjon -->
+        <section class="case-section case-section-muted">
+            <div class="case-section-heading">
+                <span class="case-eyebrow">03 · Testing og iterasjon</span>
+                <h2>Fra mid-fidelity til forbedret prototype</h2>
+
+                <p>
+                    Vi testet mid-fidelity-prototypen med seks brukere for å undersøke navigasjon,
+                    forståelse og flyt. Funnene ble omsatt til konkrete endringer før løsningen 
+                    ble videreutviklet i high fidelity.
+                </p>
+            </div>
+
+            <div class="case-comparison">
+
+                <figure class="case-comparison-item">
+                    <span class="case-image-label">Testgrunnlag · Mid-fidelity</span>
+
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Landing Page-Desktop-midfi-highsoft.png"
+                        data-lightbox-alt="Mid-fidelity-wireframe av landingssiden før brukertesting"
+                        aria-label="Åpne wireframen i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/Landing Page-Desktop-midfi-highsoft.png"
+                            alt="Mid-fidelity-wireframe av landingssiden før brukertesting"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        Mid-fidelity-wireframen ble brukt til å teste struktur,
+                        navigasjon og forståelse før visuell detaljering.
+                    </figcaption>
+                </figure>
+
+                <figure class="case-comparison-item">
+                    <span class="case-image-label">Iterert løsning · High-fidelity</span>
+
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/LandingPage-Highsoft.png"
+                        data-lightbox-alt="High-fidelity-prototypen etter brukertesting"
+                        aria-label="Åpne high-fidelity-prototypen i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/LandingPage-Highsoft.png"
+                            alt="High-fidelity-prototypen etter brukertesting"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        Etter testingen fikk løsningen tydeligere hierarki,
+                        tema-filtre og en mer synlig inngang til kursquizen.
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <div class="case-change-grid">
+
+                <article>
+                    <h3>Mer synlig veiledning</h3>
+                    <p>
+                        Kursquizen ble flyttet nærmere filtreringen, slik at
+                        brukere som var usikre lettere kunne oppdage den.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Bedre beslutningsgrunnlag</h3>
+                    <p>
+                        «Enroll course» ble endret til «Read more», fordi
+                        brukerne ønsket mer informasjon før de valgte et kurs.
+                    </p>
+                </article>
+
+                <article>
+                        <h3>Tydeligere læringsflyt</h3>
+                        <p>
+                         Navigasjonen mellom moduler og leksjoner ble forbedret.
+                         Synlig progresjon ble videreført fordi testene viste
+                         at den virket motiverende.
+                        </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Utvikling og responsivitet -->
+        <section class="case-section">
+            <div class="case-two-column case-two-column-reverse">
+
+                <!-- Ferdig utviklet kursinnhold -->
+<figure class="case-process-item">
+    <button
+        class="case-image-button"
+        type="button"
+        data-lightbox-image="highsoft-images/Skjermbilde 2026-05-19 113324.png"
+        data-lightbox-alt="Den utviklede kurssiden med video, visualisering og kunnskapstest"
+        aria-label="Åpne den utviklede kurssiden i stor visning"
+    >
+        <img
+            src="highsoft-images/Skjermbilde 2026-05-19 113324.png"
+            alt="Den utviklede kurssiden med video, visualisering og kunnskapstest"
+            loading="lazy"
+        >
+    </button>
+
+    <figcaption>
+        Den ferdig utviklede kurssiden kombinerer video, praktiske
+        eksempler og kunnskapstest i samme læringsløp.
+    </figcaption>
+</figure>
+                </figure>
+
+                <div class="case-copy">
+                    <span class="case-eyebrow">04 · Utvikling</span>
+                    <h2>Fra designsystem til fungerende løsning</h2>
+
+                    <p>
+                        Løsningen ble utviklet innenfor Highsofts visuelle profil. Teamet bygget designsystemet fra grunnen av, 
+                        med komponenter og variabler for blant annet farger, typografi, knapper og ulike tilstander 
+                        på både mobil og desktop.
+
+
+                    </p>
+
+                    <p>
+                        Min hovedoppgave i utviklingsfasen var å overføre variabelsystemet til kode og bruke det som grunnlag for implementeringen av sidene. Jeg arbeidet med både frontend og backend, 
+                        responsiv tilpasning og feilsøking på ulike skjermstørrelser. Teamet jobbet parallelt i egne Git-grener og
+                        hadde tett kommunikasjon for å integrere arbeidet til én sammenhengende løsning.
+                    </p>
+
+    
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Mobilreise -->
+        <section class="case-section case-section-dark">
+            <div class="case-carousel-heading">
+                <div>
+                    <span class="case-eyebrow">05 · Den ferdige brukerreisen</span>
+                    <h2>Fra kursvalg til fullført kurs</h2>
+                </div>
+
+                <div class="case-carousel-controls">
+                    <button
+                        type="button"
+                        class="case-carousel-button"
+                        id="carousel-previous"
+                        aria-label="Vis forrige bilde"
+                    >
+                        ‹
+                    </button>
+
+                    <button
+                        type="button"
+                        class="case-carousel-button"
+                        id="carousel-next"
+                        aria-label="Vis neste bilde"
+                    >
+                        ›
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="case-carousel"
+                id="highsoft-carousel"
+                tabindex="0"
+                aria-label="Bilder fra den ferdige mobilprototypen"
+            >
+
+                <figure class="case-carousel-slide">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Skjermbilde 2026-08-11 135531.png"
+                        data-lightbox-alt="Kursoversikt med søk, filtre og inngang til kursquiz"
+                        aria-label="Åpne kursoversikten i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/Skjermbilde 2026-08-11 135531.png"
+                            alt="Kursoversikt med søk, filtre og inngang til kursquiz"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        <strong>Finn kurs</strong>
+                        Søk og filtre hjelper brukeren med å avgrense innholdet.
+                    </figcaption>
+                </figure>
+
+                <figure class="case-carousel-slide">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Skjermbilde 2026-08-11 135617.png"
+                        data-lightbox-alt="Quiz for valg av tema, nivå og kurslengde"
+                        aria-label="Åpne quizvisningen i stor størrelse"
+                    >
+                        <img
+                            src="highsoft-images/Skjermbilde 2026-08-11 135617.png"
+                            alt="Quiz for valg av tema, nivå og kurslengde"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        <strong>Fortell hva du trenger</strong>
+                        Quizen samler preferanser gjennom korte spørsmål.
+                    </figcaption>
+                </figure>
+
+                <figure class="case-carousel-slide">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Skjermbilde 2026-08-11 135639.png"
+                        data-lightbox-alt="Personlige kursanbefalinger etter gjennomført quiz"
+                        aria-label="Åpne kursanbefalingene i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/Skjermbilde 2026-08-11 135639.png"
+                            alt="Personlige kursanbefalinger etter gjennomført quiz"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        <strong>Få anbefalinger</strong>
+                        Resultatet gir relevante kurs basert på valgene.
+                    </figcaption>
+                </figure>
+
+                <figure class="case-carousel-slide">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Skjermbilde 2026-08-11 135725.png"
+                        data-lightbox-alt="Kursoversikt med moduler og leksjoner"
+                        aria-label="Åpne kursstrukturen i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/Skjermbilde 2026-08-11 135725.png"
+                            alt="Kursoversikt med moduler og leksjoner"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        <strong>Forstå kurset</strong>
+                        Moduler og leksjoner gir en tydelig læringsstruktur.
+                    </figcaption>
+                </figure>
+
+                <figure class="case-carousel-slide">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Skjermbilde 2026-08-11 135750.png"
+                        data-lightbox-alt="Kursinnhold med synlig progresjon"
+                        aria-label="Åpne progresjonsvisningen i stor størrelse"
+                    >
+                        <img
+                            src="highsoft-images/Skjermbilde 2026-08-11 135750.png"
+                            alt="Kursinnhold med synlig progresjon"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        <strong>Følg progresjonen</strong>
+                        Fremdriftsvisningen gjør det enkelt å se hvor langt man har kommet.
+                    </figcaption>
+                </figure>
+
+                <figure class="case-carousel-slide">
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="highsoft-images/Skjermbilde 2026-08-11 135808.png"
+                        data-lightbox-alt="Bekreftelse og sertifikat etter fullført kurs"
+                        aria-label="Åpne fullført kurs i stor visning"
+                    >
+                        <img
+                            src="highsoft-images/Skjermbilde 2026-08-11 135808.png"
+                            alt="Bekreftelse og sertifikat etter fullført kurs"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <figcaption>
+                        <strong>Fullfør kurset</strong>
+                        Brukeren får bekreftelse, sertifikat og en vei videre.
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            
+        </section>
+
+        <!-- Mitt bidrag og læring -->
+        <section class="case-section case-conclusion">
+            <div class="case-section-heading">
+                <span class="case-eyebrow">06 · Refleksjon</span>
+                <h2>Mitt bidrag og det jeg lærte</h2>
+            </div>
+
+            <div class="case-conclusion-grid">
+
+                <article class="case-conclusion-card">
+                    <h3>Mitt bidrag</h3>
+
+                    <ul>
+                        <li>Brukerinnsikt, analyse og brukertesting</li>
+                        <li>Oppsett av GitHub, Git og prosjektstruktur</li>
+                        <li>Implementering av designtokens og komponenter fra Figma</li>
+                        <li>Frontend- og backendutvikling med Flask, Jinja2 og SQLite</li>
+                        <li>Utvikling av kurskort, filtrering og kursquiz</li>
+                        <li>Responsiv tilpasning, testing og feilsøking</li>
+                    </ul>
+                </article>
+
+                <article class="case-conclusion-card case-conclusion-card-accent">
+                    <h3>Viktigste læring</h3>
+
+                    <p>
+                        Prosjektet lærte meg at god produktutvikling begynner med å forstå og avgrense problemet.
+                        Researchen utfordret egne antakelser: Brukerne var mindre opptatt av gamification enn av tydelige mål, 
+                        struktur og synlig progresjon. Det gjorde sammenhengen mellom brukerinnsikt, prioritering og funksjonalitet
+                        svært konkret.
+                    </p>
+
+                    <p>
+                    Jeg lærte hvor viktig tydelig og løpende kommunikasjon er når oppgaver og fagområder 
+                    er avhengige av hverandre. Ved flaskehalser er det viktig å synliggjøre utfordringene 
+                    tidlig, avklare prioriteringer og bidra der behovet er størst.
+                    </p>
+
+                    <p>
+                        Prosjektet styrket evnen min til å ta initiativ, samarbeide på tvers og 
+                        tilpasse meg underveis, samtidig som jeg beholdt fokus på kvalitet og 
+                        fremdrift. Jeg fikk erfaring med å løse problemer i fellesskap og 
+                        følge arbeidet frem til en løsning som både fungerte teknisk og 
+                        møtte brukernes behov.
+
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Neste prosjekt -->
+<section class="next-project">
+    <div class="next-project-content">
+        <span class="case-eyebrow">Neste prosjekt</span>
+
+        <h2>LifeAdmin</h2>
+
+        <p>
+            En webapplikasjon for planlegging og organisering, utviklet
+            selvstendig med Python, Flask, SQLite og Jinja.
+        </p>
+
+        <a href="life-admin.html" class="next-project-link">
+            Se LifeAdmin
+        </a>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2026 Nina Finstad</p>
+        <p>Design og utvikling: Nina Finstad</p>
+    </footer>
+
+</body>
+</html>

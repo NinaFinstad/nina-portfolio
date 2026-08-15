@@ -1,0 +1,20 @@
+# Operativsystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# Miljøfiler og nøkler
+.env
+.env.*
+!.env.example
+
+# Node, til senere
+node_modules/
+dist/
+
+# Midlertidige filer
+*.tmp
+*.log
