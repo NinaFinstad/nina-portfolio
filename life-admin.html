@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <!-- Grunnoppsett -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeAdmin | Nina Finstad</title>
+
+    <meta
+        name="description"
+        content="LifeAdmin er en Flask-basert webapplikasjon utviklet av Nina Finstad som eksamensprosjekt i Backend Essentials."
+    >
+
+    <!-- Fonter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Felles CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <span class="logo-short">NF</span>
+                <span class="logo-full">Nina Finstad</span>
+            </a>
+        </div>
+
+        <nav class="site-nav" aria-label="Hovedmeny">
+            <a href="index.html#projects">Prosjekter</a>
+            <a href="index.html#about">Om meg</a>
+            <a href="index.html#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- =========================
+             PROSJEKTINTRODUKSJON
+        ========================== -->
+
+        <section class="project-hero lifeadmin-hero">
+            <div class="project-hero-layout">
+
+                <div class="project-hero-text">
+                    <span class="case-eyebrow">
+                        Eksamensprosjekt · Backend Essentials
+                    </span>
+
+                    <h1>LifeAdmin</h1>
+
+                    <p>
+                        LifeAdmin er en webapplikasjon for å samle avtaler, oppgaver og 
+                        annen informasjon på ett sted. Ideen oppstod fordi jeg ønsket en 
+                        enkel løsning som kunne gi bedre oversikt over alt som må huskes i 
+                        hverdagen.
+                    </p>
+
+                    <p>
+                       Jeg utviklet LifeAdmin som eksamensprosjekt i Backend Essentials. 
+                       Oppgaven åpnet for å utvikle en egen løsning innenfor de samme 
+                       backendkravene som en tradisjonell blogg. Det ga meg mulighet til å lære 
+                       gjennom en idé jeg selv var motivert for å utforske.
+                    </p>
+                </div>
+
+                <a
+                    class="project-visual-card lifeadmin-hero-image"
+                    href="lifeadmin-images/dashboard-LifeAdmin.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Åpne LifeAdmin-dashboardet i stor visning"
+                >
+                    <img
+                        src="lifeadmin-images/dashboard-LifeAdmin.png"
+                        alt="Dashboardet i LifeAdmin med avtaler, datoer, merkelapper og notater"
+                    >
+                </a>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             PROSJEKTOVERSIKT
+        ========================== -->
+
+        <section class="lifeadmin-overview">
+            <div class="case-section-heading">
+                <span class="case-eyebrow">Prosjektoversikt</span>
+                <h2>Læring gjennom praktisk backendutvikling</h2>
+
+                <p>
+                    I prosjektet fikk jeg utforske hvordan Python, Flask og SQLite kan 
+                    brukes til å bygge en databasebasert webapplikasjon. Jeg arbeidet blant 
+                    annet med funksjoner for å opprette, vise, redigere og slette innhold, 
+                    samt validering, testing og visning av dynamisk innhold.
+                </p>
+
+                <p>Underveis brukte jeg KI aktivt som sparringspartner for å forstå kode, 
+                  finne feil og komme videre når jeg stod fast. Jeg testet forslagene, gjorde 
+                  tilpasninger og jobbet steg for steg for å forstå hvordan de ulike delene av 
+                  løsningen hang sammen. Prosjektet ga meg lyst til å lære mer om utvikling og 
+                  hvordan teknologi kan brukes til å gjøre en idé om til en praktisk løsning.
+
+                </p>
+            </div>
+
+            <div class="lifeadmin-meta-grid">
+
+                <article>
+                    <span>Prosjekttype</span>
+                    <strong>Individuelt eksamensprosjekt</strong>
+                </article>
+
+                <article>
+                    <span>Rolle</span>
+                    <strong>Idé, utvikling og testing</strong>
+                </article>
+
+                <article>
+                    <span>Teknologi</span>
+                    <strong>Python, Flask, SQLite og Jinja</strong>
+                </article>
+
+                <article>
+                    <span>Hovedfokus</span>
+                    <strong>Praktisk læring i backend og database</strong>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             LØSNINGEN I PRAKSIS
+        ========================== -->
+
+        <section class="case-section lifeadmin-solution">
+            <div class="case-section-heading">
+                <span class="case-eyebrow">01 · Løsningen</span>
+                <h2>Løsningen i praksis</h2>
+
+                <p>
+                    Brukeren kan opprette, vise, redigere og slette oppføringer, 
+                    angi dato og prioritet, organisere dem med tags, legge til notater og 
+                    se oppføringene i en kalender.
+                </p>
+            </div>
+
+            <div class="lifeadmin-gallery">
+
+                <figure class="lifeadmin-gallery-item">
+                    <a
+                        href="lifeadmin-images/New-entry-LifeAdmin.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="lifeadmin-images/New-entry-LifeAdmin.png"
+                            alt="Skjema for å opprette en ny oppføring i LifeAdmin"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <figcaption>
+                        <strong>Opprett en oppføring</strong>
+                        Her kan brukeren legge inn tittel, dato, prioritet, 
+                        tags og beskrivelse. Opplysningene kontrolleres før oppføringen lagres.
+                    </figcaption>
+                </figure>
+
+                <figure class="lifeadmin-gallery-item">
+                    <a
+                        href="lifeadmin-images/oversikt-entry-LifeAdmin.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="lifeadmin-images/oversikt-entry-LifeAdmin.png"
+                            alt="Detaljvisning av en oppføring med redigering, sletting og notater"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <figcaption>
+                        <strong>Se og endre en oppføring</strong>
+                        En oppføring kan vises, redigeres eller slettes. 
+                        Det er også mulig å legge til notater med mer informasjon.
+                    </figcaption>
+                </figure>
+
+                <figure class="lifeadmin-gallery-item lifeadmin-gallery-wide">
+                    <a
+                        href="lifeadmin-images/Kalenderoversikt-LifeAdmin.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="lifeadmin-images/Kalenderoversikt-LifeAdmin.png"
+                            alt="Månedsoversikt med LifeAdmin-oppføringer plassert i en kalender"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <figcaption>
+                        <strong>Se oppføringene i kalenderen</strong>
+                        Kalenderen henter oppføringene fra databasen og viser dem på datoene de 
+                        er lagt inn på.
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        
+
+        <!-- =========================
+             TESTING OG KVALITET
+        ========================== -->
+
+        <section class="case-section lifeadmin-testing">
+            <div class="lifeadmin-two-column lifeadmin-two-column-reverse">
+
+                <figure class="lifeadmin-test-figure">
+                    <a
+                        href="lifeadmin-images/Pytest-LifeAdmin.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="lifeadmin-images/Pytest-LifeAdmin.png"
+                            alt="Terminal som viser at alle de 14 automatiserte testene består"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <figcaption>
+                        Alle de 14 automatiserte testene bestod.
+                    </figcaption>
+                </figure>
+
+                <div class="lifeadmin-technical-text">
+                    <span class="case-eyebrow">02 · Testing og kvalitet</span>
+                    <h2>Testing av de viktigste funksjonene</h2>
+
+                    <p>
+                        Som en del av oppgaven brukte jeg pytest til å sjekke at de 
+                        viktigste funksjonene virket som de skulle. Testene omfattet både 
+                        vanlige brukerhandlinger og situasjoner der det ble lagt inn ugyldig 
+                        informasjon.
+                    </p>
+
+                    <div class="lifeadmin-quality-grid">
+                       <article>
+    <strong>CRUD: opprette, vise, redigere og slette</strong>
+    <span>Testene kontrollerer de viktigste handlingene for oppføringer.</span>
+</article>
+
+<article>
+    <strong>Validering</strong>
+    <span>Kontroll av tomme felt og ugyldige verdier</span>
+</article>
+
+<article>
+    <strong>Notater og tags</strong>
+    <span>Legge til og slette notater og filtrere med tags</span>
+</article>
+
+<article>
+    <strong>Sider og kalender</strong>
+    <span>Sjekke at sider, 404-side og kalender virker</span>
+</article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+     SIKKERHET OG VALIDERING
+========================== -->
+
+<section class="case-section case-section-dark lifeadmin-security">
+    <div class="case-section-heading">
+        <span class="case-eyebrow">03 · Sikkerhet og validering</span>
+        <h2>Kontroll av data og feil</h2>
+
+        <p>
+            Sikkerhet var en del av oppgaven. Jeg arbeidet derfor med
+            grunnleggende tiltak for å kontrollere det brukeren skriver inn,
+            beskytte databasen og håndtere sletting på en ryddig måte.
+        </p>
+    </div>
+
+    <div class="lifeadmin-security-grid">
+        <article>
+            <strong>Beskyttelse av databasen</strong>
+            <p>
+                Det brukeren skriver inn, behandles som innhold og ikke som
+                kommandoer som kan endre databasen.
+            </p>
+        </article>
+
+        <article>
+            <strong>Kontroll av informasjon</strong>
+            <p>
+                Løsningen kontrollerer blant annet at nødvendige felt er
+                fylt ut, og at teksten ikke er for lang.
+            </p>
+        </article>
+
+        <article>
+            <strong>Ryddig sletting</strong>
+            <p>
+                Når en oppføring slettes, håndteres også notater og
+                koblinger som hører til oppføringen.
+            </p>
+        </article>
+    </div>
+</section>
+<!-- =========================
+     REFLEKSJON
+========================== -->
+
+<section class="case-section lifeadmin-reflection">
+    <div class="case-section-heading">
+        <span class="case-eyebrow">04 · Refleksjon</span>
+        <h2>Det jeg lærte</h2>
+    </div>
+
+    <div class="lifeadmin-reflection-grid">
+        <article>
+            <h3>Fra teori til praksis</h3>
+
+            <p>
+                LifeAdmin ga meg praktisk erfaring med hvordan Python,
+                Flask, Jinja og en database brukes sammen i en
+                webapplikasjon. Gjennom prosjektet fikk jeg bedre
+                forståelse for hvordan de ulike delene påvirker hverandre.
+            </p>
+
+            <p>
+                Jeg opplever backend som utfordrende, men også spennende
+                fordi det alltid vil være mer å lære. Jeg likte
+                problemløsningen underveis og kjente på en stor
+                mestringsfølelse da jeg fikk CRUD-funksjonene for å
+                opprette, vise, redigere og slette oppføringer til å
+                fungere.
+            </p>
+        </article>
+
+        <article class="lifeadmin-reflection-highlight">
+            <h3>KI som sparringspartner</h3>
+
+            <p>
+                Jeg brukte KI aktivt for å forstå syntaks og feilmeldinger,
+                diskutere mulige løsninger og komme videre når jeg stod fast.
+            </p>
+
+            <p>
+                En viktig erfaring var at forslagene alltid måtte vurderes
+                i sammenheng med resten av løsningen. Ved å teste, tilpasse
+                og undersøke resultatene lærte jeg å bruke KI som en
+                sparringspartner og ikke som en fasit.
+            </p>
+        </article>
+    </div>
+</section>
+
+        <!-- =========================
+             NESTE PROSJEKT
+        ========================== -->
+
+        <section class="next-project">
+            <div class="next-project-content">
+                <span class="case-eyebrow">Neste prosjekt</span>
+
+                <h2>Matflyt</h2>
+
+                <p>
+                    Et UX/UI-prosjekt basert på spørreundersøkelse, intervjuer
+                    og kartlegging av behov knyttet til middagsplanlegging.
+                </p>
+
+                <a href="matflyt.html" class="next-project-link">
+                    Se Matflyt
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+        <p>© 2026 Nina Finstad</p>
+        <p>Design og utvikling: Nina Finstad</p>
+    </footer>
+
+</body>
+</html>
