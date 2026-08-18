@@ -1,353 +1,763 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
-    <!-- Basic setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borrow & Lend | Nina Finstad</title>
 
-    <!-- Fonts -->
+    <meta
+        name="description"
+        content="Matflyt er et individuelt UX/UI-prosjekt av Nina Finstad om enklere og mer personlig middagsplanlegging."
+    >
+
+    <title>Matflyt | Nina Finstad</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Gjenbruker lysbildevisning og karusell fra Highsoft-siden. -->
+    <script src="js/project.js" defer></script>
 </head>
+
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-   
-<header class="site-header">
-    <div class="logo">
-        <a href="index.html" class="logo-link">
-            <span class="logo-short">NF</span>
-            <span class="logo-full">Nina Finstad</span>
-        </a>
-    </div>
-
-    <nav class="site-nav">
-        <a href="index.html">Back to portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-   <!-- =========================
-     PROJECT HERO
-========================= -->
-<section class="project-hero">
-    <div class="project-hero-layout">
-        <div class="project-hero-text">
-            <h1>Borrow &amp; Lend</h1>
-            <p>
-                Borrow &amp; Lend is a UX concept for a digital platform where people can borrow and lend everyday items within their local community. The project explored how trust, convenience and accessibility influence people’s willingness to share resources.
-            </p>
-            <p>
-                The project was developed as part of two courses at Oslo Nye Fagskole: UX Essentials and Agile Practices &amp; Team Collaboration. Working in a team of three, we followed the full UX design process from research and problem definition to prototyping, usability testing and iteration. The project was developed through agile sprints, where tasks and responsibilities were shared across the team.
-            </p>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <span class="logo-short">NF</span>
+                <span class="logo-full">Nina Finstad</span>
+            </a>
         </div>
 
-        <div class="project-visual-card">
-            <img src="borrow-lend-images/borrow-lend-hero.png" alt="Borrow and Lend project mockup screens">
-        </div>
-    </div>
-</section>
-    <!-- =========================
-         PROJECT META
-    ========================== -->
-    <section class="project-meta-section">
-        <div class="project-meta-grid">
-            <div class="meta-card">
-            
-                <h3>Role</h3>
-                <p>
-UX Designer (Agile team of 3)<br>
-Worked across research, design and testing
-</p>
+        <nav class="site-nav" aria-label="Hovedmeny">
+            <a href="index.html#projects">Prosjekter</a>
+            <a href="index.html#about">Om meg</a>
+            <a href="index.html#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- =========================
+             PROSJEKTINTRODUKSJON
+        ========================== -->
+
+        <section class="project-hero matflyt-hero">
+            <div class="project-hero-layout">
+
+                <div class="project-hero-text">
+                    <span class="case-eyebrow">
+                        Eksamensprosjekt · Creative UX &amp; UI Design
+                    </span>
+
+                    <h1>Matflyt</h1>
+
+                    <p>
+                        Matflyt er et konsept for enklere middagsplanlegging i en
+                        travel hverdag. Løsningen lager en personlig ukeplan ut fra
+                        antall i husholdning, preferanser, ingredienser og tiden brukeren har
+                        tilgjengelig.
+                    </p>
+
+                    <p>
+                        Prosjektet tar utgangspunkt i en utfordring mange møter i hverdagen: 
+                        å finne middager som passer både tid, preferanser og ulike behov. 
+                        Jeg ønsket å utforske hvordan en personlig og fleksibel løsning kunne
+                        redusere tiden som brukes på å velge middag, samtidig som den bidrar 
+                        til bedre planlegging og mer variasjon.
+                    </p>
+                </div>
+
+                <button
+                    class="project-visual-card case-image-button matflyt-hero-image"
+                    type="button"
+                    data-lightbox-image="matflyt-images/landingpage-hifi-desktop.png"
+                    data-lightbox-alt="Desktopvisning av Matflyt med personlig middagsukeplan og oversikt over variasjon"
+                    aria-label="Åpne den ferdige desktopprototypen i stor visning"
+                >
+                    <img
+                        src="matflyt-images/landingpage-hifi-desktop.png"
+                        alt="Desktopvisning av Matflyt med personlig middagsukeplan og oversikt over variasjon"
+                    >
+                </button>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             PROSJEKTOVERSIKT
+        ========================== -->
+
+        <section class="project-meta-section matflyt-meta">
+        
+            <div class="section-heading">
+                <h2>Prosjektoversikt</h2>
             </div>
 
-            <div class="meta-card">
-                <h3>Duration</h3>
-                <p><p>4 sprints (2–3 weeks per sprint)</p></p>
+            <div class="project-meta-grid">
+                <article class="meta-card">
+                    <h3>Prosjekttype</h3>
+                    <p>Individuelt eksamensprosjekt</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Rolle</h3>
+                    <p>Research, konsept og UI-design</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Verktøy</h3>
+                    <p>Figma, FigJam og Google Forms</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Leveranse</h3>
+                    <p>Responsiv, interaktiv prototype</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Hovedfokus</h3>
+                    <p>Designsystem og brukervennlig flyt</p>
+                </article>
+
+                <article class="meta-card">
+                    <h3>Plattformer</h3>
+                    <p>Mobil og desktop</p>
+                </article>
             </div>
-
-            <div class="meta-card">
-                <h3>Methods</h3>
-  <p>
-User interviews, survey, personas, journey maps,<br>
-usability testing, competitive research,<br>
-Agile (Scrum)
-</p>
-            </div>
-
-            <div class="meta-card">
-                <h3>Tools</h3>
-                <p>Figma, FigJam, Teams, Google Forms</p>
-            </div>
-        </div>
-    </section>
-
-   
-
-    <!-- =========================
-         The Challenge
-    ========================== -->
-<section class="project-content-section">
-    <div class="project-two-column">
-
-        <div class="project-text-block">
-            <h2>The challenge</h2>
-
-            <p>
-                Borrowing items from others is not a natural first choice for most people. It is typically a situational behaviour, used when the need is temporary, uncertain, or infrequent. While the idea of sharing is positive, users are often hesitant due to concerns around trust, responsibility and coordination.
-            </p>
-
-            <p>
-                Our challenge was to design a solution that makes borrowing feel safe, simple and predictable. The experience needed to reduce uncertainty, support clear communication, and make local exchanges feel as easy as buying something new — while still encouraging responsible and respectful interactions between users.
-            </p>
-        </div>
-
-        <div class="project-visual-card">
-            <img src="borrow-lend-images/problem-statements.png" alt="Problem statements for Borrow and Lend">
-        </div>
-
-</section>
+        </section>
 
 <!-- =========================
-     Research
-========================= -->
-<section class="project-content-section">
-    <div class="project-two-column">
+     03 · ITERASJON
+========================== -->
 
-        <div class="project-text-block">
-            <h2>Research</h2>
+<section class="case-section case-section-muted matflyt-iteration">
+
+    <div class="case-two-column">
+
+        <div class="case-copy">
+            <span class="case-eyebrow">03 · Iterasjon</span>
+            <h2>Fra skisse til fungerende prototype</h2>
 
             <p>
-                To understand how people approach borrowing and sharing items, we conducted both qualitative and quantitative research. We carried out user interviews and distributed a survey with 42 respondents to explore habits, concerns and motivations related to borrowing everyday items.
+                Jeg utviklet løsningen stegvis fra en enkel wireframe til en
+                high-fidelity-prototype for både desktop og mobil. Underveis
+                justerte jeg struktur, innhold og funksjoner etter hvert som
+                jeg så hvordan de ulike delene måtte fungere sammen.
             </p>
 
             <p>
-                The survey provided quantitative insights into borrowing habits, trust concerns and preferred item categories. These findings helped validate patterns from the interviews and gave us a clearer foundation for the design direction.
-            </p>
-
-            <p>
-                The findings were analysed and synthesised as a team, identifying key themes around trust, convenience and accessibility. I contributed to analysing the findings and translating them into insights that informed the design decisions.
-            </p>
-        </div>
-
-        <div class="project-visual-card">
-            <img src="borrow-lend-images/Survey-Findings.png" alt="Survey findings showing user preferences and concerns">
-        </div>
-
-    </div>
-</section>
-
-<!-- =========================
-     Key Insights
-========================= -->
-<section class="project-content-section">
-    <div class="project-two-column">
-
-        <div class="project-text-block">
-            <h2>Key insights</h2>
-
-            <p>
-                The research revealed several important patterns that influenced the direction of the solution. While users were generally open to the idea of borrowing, their willingness depended heavily on trust, convenience and clarity.
-            </p>
-
-            <p>
-                These insights helped define the core challenges and guided the design decisions throughout the project.
+                Målet var å bygge en sammenhengende brukerflyt der brukeren
+                kunne gå fra personlige preferanser til ukeplan og middagsvalg
+                uten unødvendige steg.
             </p>
         </div>
 
-        <div class="project-insights-grid">
+        <div class="matflyt-iteration-images">
 
-            <div class="insight-card">
-                <h3>Trust is the biggest barrier</h3>
-                <p>Users hesitate to borrow from strangers due to lack of accountability and transparency.</p>
-            </div>
+            <figure class="matflyt-iteration-figure">
+                <span class="case-image-label">
+                    Tidlig struktur · Low-fidelity
+                </span>
 
-            <div class="insight-card">
-                <h3>Borrowing is situational</h3>
-                <p>People only consider borrowing when the need is temporary, rare or uncertain.</p>
-            </div>
+                <button
+                    class="case-image-button"
+                    type="button"
+                    data-lightbox-image="matflyt-images/landingpage-lowfi-desktop.png"
+                    data-lightbox-alt="Tidlig low-fidelity-wireframe av Matflyts landingsside"
+                    aria-label="Åpne den tidlige wireframen i stor visning"
+                >
+                    <img
+                        src="matflyt-images/landingpage-lowfi-desktop.png"
+                        alt="Tidlig low-fidelity-wireframe av Matflyts landingsside"
+                        loading="lazy"
+                    >
+                </button>
 
-            <div class="insight-card">
-                <h3>Convenience is key</h3>
-                <p>If borrowing feels complicated or time-consuming, users prefer to buy instead.</p>
-            </div>
+                <figcaption>
+                    Første utkast med fokus på struktur og innhold.
+                </figcaption>
+            </figure>
 
-            <div class="insight-card">
-                <h3>Local matters</h3>
-                <p>Users prefer borrowing within a short distance to avoid logistics and friction.</p>
-            </div>
+            <figure class="matflyt-iteration-figure">
+                <span class="case-image-label">
+                    Videreutviklet løsning · High-fidelity
+                </span>
 
-            <div class="insight-card">
-                <h3>Clear communication reduces risk</h3>
-                <p>Users need clear expectations around condition, return and responsibility.</p>
-            </div>
+                <button
+                    class="case-image-button"
+                    type="button"
+                    data-lightbox-image="matflyt-images/landingpage-hifi-desktop.png"
+                    data-lightbox-alt="High-fidelity-prototype av Matflyts landingsside"
+                    aria-label="Åpne high-fidelity-prototypen i stor visning"
+                >
+                    <img
+                        src="matflyt-images/landingpage-hifi-desktop.png"
+                        alt="High-fidelity-prototype av Matflyts landingsside"
+                        loading="lazy"
+                    >
+                </button>
 
-            <div class="insight-card">
-                <h3>Social factors influence behaviour</h3>
-                <p>People feel more comfortable borrowing within trusted circles or familiar contexts.</p>
-            </div>
+                <figcaption>
+                    Den videreutviklede løsningen med ferdig visuelt uttrykk
+                    og funksjonalitet.
+                </figcaption>
+            </figure>
 
-        </div>
-
-    </div>
-</section>
-
-<!-- =========================
-     Design direction
-========================= -->
-<section class="project-content-section">
-    <div class="project-two-column">
-
-        <div class="project-text-block">
-            <h2>Design direction</h2>
-
-            <p>
-                Based on the research and insights, we narrowed the scope of the concept to the core parts of the borrowing experience. Rather than designing a full platform with many supporting features, we focused on the pages and functions that communicate the main value of the service most clearly.
-            </p>
-
-            <p>
-                The information architecture was structured around the key user flows: landing page, borrowing, lending, account management and communication. This helped us define what needed to be included in the prototype, and what could remain outside the scope of this iteration.
-            </p>
-
-            <p>
-                In practice, this meant prioritising clear navigation, item discovery, listing creation and the most essential trust-building elements. The goal was to make the experience easy to understand, simple to use and realistic within the timeframe of the project.
-            </p>
-        </div>
-
-        <div class="project-insights-grid">
-            <div class="insight-card">
-                <h3>Focused scope</h3>
-                <p>We prioritised the core borrowing and lending flows instead of designing a full-featured platform.</p>
-            </div>
-
-            <div class="insight-card">
-                <h3>Clear structure</h3>
-                <p>The information architecture was organised around landing, borrowing, lending, communication and account management.</p>
-            </div>
-
-            <div class="insight-card">
-                <h3>Essential user tasks</h3>
-                <p>We focused on navigation, item discovery, listing creation and the most important user actions.</p>
-            </div>
-
-            <div class="insight-card">
-                <h3>Realistic prioritisation</h3>
-                <p>Supporting pages and secondary features were considered out of scope for this prototype iteration.</p>
-            </div>
         </div>
 
     </div>
+
 </section>
+
+
 <!-- =========================
-     Wireframes
-========================= -->
-<section class="project-content-section">
-    <div class="project-two-column">
+     04 · DESIGNSYSTEM
+========================== -->
 
-        <div class="project-text-block">
-            <h2>Wireframes</h2>
+<section class="case-section case-section-dark matflyt-design-system">
+
+    <div class="case-two-column">
+
+        <div class="case-copy">
+            <span class="case-eyebrow">04 · Designsystem</span>
+            <h2>Et system som gjorde løsningen lettere å utvikle</h2>
 
             <p>
-                We translated the structure and priorities from the information architecture into mid-fidelity wireframes. At this stage, the focus was on page layout, hierarchy and the most important user flows across the landing page, borrower view and lender view.
+                Etter hvert som prototypen vokste, ble det viktig å unngå at
+                hvert skjermbilde ble bygget som en egen løsning. Jeg organiserte
+                derfor designet med variabler, semantiske tokens og gjenbrukbare
+                komponenter i Figma.
             </p>
 
             <p>
-                Working in wireframes allowed us to test how the content should be organised before moving further into visual refinement. It also helped us make sure that navigation, key actions and trust-building elements were placed in a clear and intuitive way.
+                Farger fikk en funksjon i systemet, for eksempel bakgrunn,
+                tekst, handlinger og ulike tilstander. Variablene gjorde det
+                mulig å bruke de samme valgene på tvers av designet og ga
+                samtidig grunnlag for lys og mørk visning.
             </p>
 
             <p>
-                These wireframes became an important bridge between the early concept work and the final prototype, helping us align the experience across pages and devices.
+                Sammen med Auto Layout og komponenter gjorde systemet det
+                enklere å gjøre endringer underveis og beholde et konsekvent
+                visuelt uttrykk på tvers av mobil og desktop.
             </p>
         </div>
 
-        <div class="project-visual-card">
-            <img src="borrow-lend-images/mid-fi-wireframes.png" alt="Mid-fidelity wireframes for Borrow and Lend">
-        </div>
+        <figure class="matflyt-system-figure">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/semantic-tokens.png"
+                data-lightbox-alt="Variabler og semantiske designtokens for Matflyt i Figma"
+                aria-label="Åpne variabelsystemet i stor visning"
+            >
+                <img
+                    src="matflyt-images/semantic-tokens.png"
+                    alt="Variabler og semantiske designtokens for Matflyt i Figma"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                Variabler og semantiske tokens kobler visuelle verdier til
+                funksjoner i grensesnittet.
+            </figcaption>
+
+        </figure>
 
     </div>
+
 </section>
 
-<!-- =========================
-     Final design
-========================= -->
-<section class="project-content-section">
-    <div class="project-two-column">
-
-        <div class="project-text-block">
-            <h2>Final design</h2>
-
-            <p>
-                Based on the validated structure and flows from the wireframes, we developed a high-fidelity prototype focusing on clarity, trust and ease of use. The design aimed to make borrowing feel simple, transparent and accessible from the first interaction.
-            </p>
-
-            <p>
-                We focused on clear visual hierarchy, intuitive navigation and consistent components to guide users through the borrowing and lending process. Special attention was given to trust-building elements such as user profiles, item details and communication between users.
-            </p>
-
-            <p>
-                The final design reflects the core priorities defined earlier in the process, translating insights into a cohesive and user-friendly experience.
-            </p>
-        </div>
-
-        <div class="project-visual-card">
-            <img src="borrow-lend-images/high-fi-wireframe.png" alt="High fidelity prototype screens for Borrow and Lend">
-        </div>
-
-    </div>
-</section>
 
 <!-- =========================
-     Reflection
-========================= -->
-<section class="project-content-section">
-    <div class="project-text-block project-text-center">
-        <h2>Reflection</h2>
+     05 · KOMPONENTER OG FUNKSJONALITET
+========================== -->
+
+<section class="case-section matflyt-components">
+
+    <div class="case-section-heading">
+        <span class="case-eyebrow">05 · Komponenter og funksjonalitet</span>
+        <h2>Gjenbrukbare deler med ulike tilstander</h2>
 
         <p>
-            This project significantly changed how I approach design. Before working with UX in a structured way, I relied more on intuition and personal assumptions. Through research, synthesis and testing, I learned to base decisions on user insights rather than preferences.
+            Jeg bygget sentrale deler av løsningen som gjenbrukbare komponenter
+            med variants og ulike states. Det gjorde det mulig å bruke samme
+            struktur på tvers av desktop og mobil, samtidig som komponentene
+            kunne tilpasses ulike situasjoner og skjermstørrelser.
         </p>
 
         <p>
-            One of the most valuable learnings was understanding that good solutions emerge through iteration. Instead of trying to perfect ideas early, I learned to explore, test and refine continuously. This shift helped me become more confident in both my process and my design decisions.
-        </p>
-
-        <p>
-            Working in an Agile team also challenged me to communicate more clearly, ask questions and adapt to shared workflows. Over time, I became more comfortable contributing actively and trusting both the process and the team.
-        </p>
-
-        <p>
-            Overall, the project strengthened my understanding of UX as an ongoing, user-centred process. It also confirmed that designing meaningful solutions requires both structure, collaboration and continuous learning.
+            Komponentene ble også brukt i prototypingen. Dermed kunne jeg
+            arbeide med både visuell konsistens og hvordan løsningen skulle
+            reagere når brukeren gjorde et valg.
         </p>
     </div>
+
+
+    <div class="matflyt-component-grid">
+
+        <!-- Knapper -->
+        <figure class="matflyt-component-card">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/Buttons.png"
+                data-lightbox-alt="Knappesystem med ulike typer og states for desktop og mobil"
+                aria-label="Åpne knappesystemet i stor visning"
+            >
+                <img
+                    src="matflyt-images/Buttons.png"
+                    alt="Knappesystem med ulike typer og states"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Knapper og states</strong>
+                Primary, secondary og ghost med blant annet default,
+                hover, selected og disabled.
+            </figcaption>
+
+        </figure>
+
+
+        <!-- Filter chips -->
+        <figure class="matflyt-component-card">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/Filter cips.png"
+                data-lightbox-alt="Filter chips med ulike states for desktop og mobil"
+                aria-label="Åpne filterkomponentene i stor visning"
+            >
+                <img
+                    src="matflyt-images/Filter cips.png"
+                    alt="Filter chips med ulike states for desktop og mobil"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Filtervalg</strong>
+                Chips gir visuell tilbakemelding når brukeren velger
+                preferanser og filtrerer innhold.
+            </figcaption>
+
+        </figure>
+
+
+        <!-- Setup cards -->
+        <figure class="matflyt-component-card">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/Setup Cards.png"
+                data-lightbox-alt="Setup Cards for onboarding på desktop og mobil"
+                aria-label="Åpne onboarding-komponentene i stor visning"
+            >
+                <img
+                    src="matflyt-images/Setup Cards.png"
+                    alt="Setup Cards for onboarding på desktop og mobil"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Personlig oppsett</strong>
+                Gjenbrukbare kort samler informasjon om husholdning,
+                ingredienser, tid og brukerens mål.
+            </figcaption>
+
+        </figure>
+
+
+        <!-- Datavisualisering -->
+        <figure class="matflyt-component-card">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/Data visualisation.png"
+                data-lightbox-alt="Ulike komponenter for visualisering av variasjon og mål"
+                aria-label="Åpne datavisualiseringene i stor visning"
+            >
+                <img
+                    src="matflyt-images/Data visualisation.png"
+                    alt="Ulike komponenter for visualisering av variasjon og mål"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Datavisualisering</strong>
+                Flere visninger ble utforsket for å gjøre informasjon om
+                variasjon og mål lettere å forstå.
+            </figcaption>
+
+        </figure>
+
+
+        <!-- Header -->
+        <figure class="matflyt-component-card">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/Header.png"
+                data-lightbox-alt="Responsiv header-komponent for desktop og mobil"
+                aria-label="Åpne navigasjonskomponenten i stor visning"
+            >
+                <img
+                    src="matflyt-images/Header.png"
+                    alt="Responsiv header-komponent for desktop og mobil"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Responsiv navigasjon</strong>
+                Headeren bruker samme visuelle uttrykk på desktop og mobil,
+                men er tilpasset ulike skjermstørrelser og måter å navigere på.
+            </figcaption>
+
+        </figure>
+
+    </div>
+
 </section>
 
-<section id="contact" class="contact-section">
-    <div class="section-heading">
-        <h2>Contact</h2>
+
+<!-- =========================
+     06 · FERDIG BRUKERREISE
+========================== -->
+
+<section class="case-section case-section-dark matflyt-final-flow">
+
+    <div class="case-carousel-heading">
+
+        <div>
+            <span class="case-eyebrow">06 · Den ferdige brukerreisen</span>
+            <h2>Fra preferanser til middagsvalg</h2>
+
+            <p>
+               Komponentene, datavisualiseringene og MVP-flyten ble satt sammen til flere 
+               skjermbilder. Fordi designsystemet og de gjenbrukbare komponentene allerede var 
+               på plass, kunne jeg bygge skjermene effektivt og samtidig beholde et konsistent 
+               uttrykk.
+            </p>
+
+            <p>
+                Brukerreisen ble strukturert med utgangspunkt i user story map og 
+                informasjonsarkitekturen. Her vises et utvalg av skjermene fra hovedflyten.
+                Den ferdige prototypen inneholdt flere skjermbilder, valg og tilstander som lot 
+                brukeren bevege seg gjennom løsningen på ulike måter.
+            </p>
+
+            <p>
+                Da skjermene var ferdig designet og flyten fungerte som planlagt, koblet jeg 
+                dem sammen til en interaktiv prototype som ble klargjort for brukertesting.
+            </p>
+        </div>
+
+       
+
     </div>
 
-    <div class="contact-content">
-        <p>
-            Email:
-            <a href="mailto:finstad83@gmail.com">finstad83@gmail.com</a>
-        </p>
 
-        <p class="contact-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <span>|</span>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </p>
+    <div
+        class="case-carousel"
+        id="project-carousel"
+        tabindex="0"
+        aria-label="Bilder fra den ferdige Matflyt-prototypen på mobil"
+    >
+
+        <figure class="case-carousel-slide">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/mobil1.png"
+                data-lightbox-alt="Mobilskjerm for valg av husholdning, ingredienser og tid"
+                aria-label="Åpne skjermen for personlige preferanser"
+            >
+                <img
+                    src="matflyt-images/mobil1.png"
+                    alt="Mobilskjerm for valg av husholdning, ingredienser og tid"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Tilpass forslagene</strong>
+                Brukeren angir husholdning, ingredienser, tilgjengelig tid og mål for å få 
+                mer relevante middagsforslag.
+            </figcaption>
+
+        </figure>
+
+
+        <figure class="case-carousel-slide">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/mobil2.png"
+                data-lightbox-alt="Mobilvisning av ukeplan og variasjon i måltidene"
+                aria-label="Åpne ukeplanen i stor visning"
+            >
+                <img
+                    src="matflyt-images/mobil2.png"
+                    alt="Mobilvisning av ukeplan og variasjon i måltidene"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Få en ukeplan</strong>
+                Ukeplanen viser måltider og måloppnåelse basert på brukerens valgte mål. 
+                En rett kan enkelt byttes ved å utforske alternative middagsforslag.
+            </figcaption>
+
+        </figure>
+
+
+        <figure class="case-carousel-slide">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/mobil3.png"
+                data-lightbox-alt="Middagkort på mobil med valg for å lagre eller bytte rett"
+                aria-label="Åpne middagsvalget i stor visning"
+            >
+                <img
+                    src="matflyt-images/mobil3.png"
+                    alt="Middagkort på mobil med valg for å lagre eller bytte rett"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Se utvikling og finne inspirasjon</strong>
+                Datavisualiseringen synliggjør hvordan matvalgene samsvarer med brukerens mål, 
+                og hvor det er rom for forbedring. Herfra kan brukeren enkelt gå videre for å finne inspirasjon til nye valg.
+            </figcaption>
+
+        </figure>
+
+
+        <figure class="case-carousel-slide">
+
+            <button
+                class="case-image-button"
+                type="button"
+                data-lightbox-image="matflyt-images/mobil4.png"
+                data-lightbox-alt="Oppskriftsvisning med bilde og ingredienser på mobil"
+                aria-label="Åpne oppskriften i stor visning"
+            >
+                <img
+                    src="matflyt-images/mobil4.png"
+                    alt="Oppskriftsvisning med bilde og ingredienser på mobil"
+                    loading="lazy"
+                >
+            </button>
+
+            <figcaption>
+                <strong>Se oppskriften</strong>
+                Den valgte middagen leder videre til ingredienser og oppskrift.
+            </figcaption>
+
+        </figure>
+
     </div>
+
 </section>
+
+
+<!-- =========================
+     07 · TESTING OG FORBEDRING
+========================== -->
+
+<section class="case-section matflyt-testing">
+
+    <div class="case-section-heading">
+
+        <span class="case-eyebrow">07 · Testing og forbedring</span>
+        <h2>Designet ble ikke ferdig på første forsøk</h2>
+
+        <p>
+            Da high-fidelity-prototypen var klar, gjennomførte jeg brukertesting av 
+            brukerflyten. Hovedstrukturen fungerte godt, men testingen viste også at enkelte ord,
+            valg og interaksjoner kunne gjøres tydeligere.
+        </p>
+
+        <p>
+            Testing ble dermed en naturlig del av den iterative arbeidsprosessen: å bygge, teste,
+             oppdage forbedringsmuligheter og justere løsningen underveis.
+        </p>
+
+    </div>
+
+    <div class="case-insight-grid">
+
+        <article class="case-insight-card">
+            <span>01</span>
+            <h3>Tydeligere handlinger</h3>
+
+            <p>
+                En knapp med teksten «Min side» beskrev ikke handlingen godt
+                nok og burde heller hete «Lagre».
+            </p>
+        </article>
+
+        <article class="case-insight-card">
+            <span>02</span>
+            <h3>Enklere endringer</h3>
+
+            <p>
+                Brukerne ønsket å kunne endre preferanser fra profilen uten
+                å gå gjennom hele oppsettet på nytt.
+            </p>
+        </article>
+
+        <article class="case-insight-card">
+            <span>03</span>
+            <h3>Mer forutsigbar flyt</h3>
+
+            <p>
+                Testingen viste at blant annet karusell og nedtrekksmeny
+                kunne justeres for å gjøre interaksjonen tydeligere.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     08 · REFLEKSJON
+========================== -->
+
+<section class="case-section case-conclusion">
+
+    <div class="case-section-heading">
+        <span class="case-eyebrow">08 · Refleksjon</span>
+        <h2>Det jeg tar med meg videre</h2>
+    </div>
+
+    <div class="case-conclusion-grid">
+
+        <article class="case-conclusion-card">
+
+            <h3>Fra skjermer til system</h3>
+
+           <p>
+                Matflyt ga meg en mye bedre forståelse av Figma som mer enn et verktøy
+                for å tegne grensesnitt. Arbeidet med variabler, tokens, Auto Layout,
+                komponenter og varianter viste meg hvordan et design kan bygges som
+                et system som er enklere å endre og videreutvikle.
+           </p>
+
+            <p>
+                Underveis erfarte jeg at komponenter som fungerte godt alene, ikke
+                nødvendigvis fungerte like godt når de skulle settes sammen til
+                komplette skjermer. Jeg måtte derfor justere både komponenter,
+                layout og interaksjoner etter hvert som brukerflyten tok form.
+            </p>
+
+            <p>
+                Datavisualiseringen var en del jeg jobbet mye med underveis. Jeg prøvde ulike 
+                løsninger og justerte dem etter hvert som resten av designet tok form. Det ga 
+                meg en større forståelse for hvordan informasjon kan formidles visuelt, og 
+                hvordan de ulike delene av et grensesnitt må fungere sammen.
+            </p>
+
+        </article>
+
+
+        <article class="case-conclusion-card case-conclusion-card-accent">
+
+            <h3>Design som problemløsning</h3>
+
+            <p>
+                  Det viktigste jeg tar med meg videre, er verdien av å arbeide
+                  stegvis og iterativt. Jeg startet med å undersøke om behovet faktisk
+                  fantes, prioriterte hva løsningen skulle inneholde og utviklet deretter
+                  designet gjennom skisser, komponenter, prototyping og testing.
+            </p>
+
+            <p>
+                Gjennom arbeidet fikk jeg også en større forståelse for hvordan de
+                enkelte designvalgene påvirker brukeropplevelsen. Farger, kontraster,
+                typografi, plassering og visuell hierarki har en funksjon, på samme
+                måte som størrelsen og plasseringen av en knapp eller hvordan den
+                reagerer når brukeren gjør et valg. Mange små beslutninger må fungere
+                sammen for at løsningen skal oppleves tydelig, forutsigbar og enkel
+                å bruke.
+            </p>
+
+            <p>
+                 Jeg forsøkte også å tenke tilgjengelighet inn som en del av designet,
+                 blant annet gjennom kontraster, dark mode, tydelige interaksjoner og
+                 løsninger som ikke er avhengige av én bestemt måte å navigere på.
+                 Prosjektet ga meg derfor en tydeligere forståelse av design som
+                 problemløsning, ikke bare som det visuelle uttrykket.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="site-footer">
+    <p>© 2026 Nina Finstad</p>
+    <p>Design og utvikling: Nina Finstad</p>
+</footer>
+
+
+<!-- =========================
+     BILDEFORSTØRRELSE
+========================== -->
+
+<dialog id="case-lightbox" class="case-lightbox">
+
+    <button
+        id="case-lightbox-close"
+        class="case-lightbox-close"
+        type="button"
+        aria-label="Lukk bildet"
+    >
+        ×
+    </button>
+
+    <img
+        id="case-lightbox-image"
+        class="case-lightbox-image"
+        src=""
+        alt=""
+    >
+
+</dialog>
 
 </body>
-
-</header>
 </html>

@@ -23,6 +23,9 @@
 
     <!-- Felles CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Felles JavaScript for prosjektsidene -->
+    <script src="js/project.js" defer></script>
 </head>
 
 <body>
@@ -70,25 +73,25 @@
                     </p>
 
                     <p>
-                       Jeg utviklet LifeAdmin som eksamensprosjekt i Backend Essentials. 
-                       Oppgaven åpnet for å utvikle en egen løsning innenfor de samme 
-                       backendkravene som en tradisjonell blogg. Det ga meg mulighet til å lære 
-                       gjennom en idé jeg selv var motivert for å utforske.
+                        Jeg utviklet LifeAdmin som eksamensprosjekt i Backend Essentials. 
+                        Oppgaven åpnet for å utvikle en egen løsning innenfor de samme 
+                        backendkravene som en tradisjonell blogg. Det ga meg mulighet til å lære 
+                        gjennom en idé jeg selv var motivert for å utforske.
                     </p>
                 </div>
 
-                <a
-                    class="project-visual-card lifeadmin-hero-image"
-                    href="lifeadmin-images/dashboard-LifeAdmin.png"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <button
+                    class="project-visual-card lifeadmin-hero-image case-image-button"
+                    type="button"
+                    data-lightbox-image="lifeadmin-images/dashboard-LifeAdmin.png"
+                    data-lightbox-alt="Dashboardet i LifeAdmin med avtaler, datoer, merkelapper og notater"
                     aria-label="Åpne LifeAdmin-dashboardet i stor visning"
                 >
                     <img
                         src="lifeadmin-images/dashboard-LifeAdmin.png"
                         alt="Dashboardet i LifeAdmin med avtaler, datoer, merkelapper og notater"
                     >
-                </a>
+                </button>
 
             </div>
         </section>
@@ -109,12 +112,12 @@
                     samt validering, testing og visning av dynamisk innhold.
                 </p>
 
-                <p>Underveis brukte jeg KI aktivt som sparringspartner for å forstå kode, 
-                  finne feil og komme videre når jeg stod fast. Jeg testet forslagene, gjorde 
-                  tilpasninger og jobbet steg for steg for å forstå hvordan de ulike delene av 
-                  løsningen hang sammen. Prosjektet ga meg lyst til å lære mer om utvikling og 
-                  hvordan teknologi kan brukes til å gjøre en idé om til en praktisk løsning.
-
+                <p>
+                    Underveis brukte jeg KI aktivt som sparringspartner for å forstå kode, 
+                    finne feil og komme videre når jeg stod fast. Jeg testet forslagene, gjorde 
+                    tilpasninger og jobbet steg for steg for å forstå hvordan de ulike delene av 
+                    løsningen hang sammen. Prosjektet ga meg lyst til å lære mer om utvikling og 
+                    hvordan teknologi kan brukes til å gjøre en idé om til en praktisk løsning.
                 </p>
             </div>
 
@@ -162,17 +165,19 @@
             <div class="lifeadmin-gallery">
 
                 <figure class="lifeadmin-gallery-item">
-                    <a
-                        href="lifeadmin-images/New-entry-LifeAdmin.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="lifeadmin-images/New-entry-LifeAdmin.png"
+                        data-lightbox-alt="Skjema for å opprette en ny oppføring i LifeAdmin"
+                        aria-label="Åpne skjemaet for ny oppføring i stor visning"
                     >
                         <img
                             src="lifeadmin-images/New-entry-LifeAdmin.png"
                             alt="Skjema for å opprette en ny oppføring i LifeAdmin"
                             loading="lazy"
                         >
-                    </a>
+                    </button>
 
                     <figcaption>
                         <strong>Opprett en oppføring</strong>
@@ -182,17 +187,19 @@
                 </figure>
 
                 <figure class="lifeadmin-gallery-item">
-                    <a
-                        href="lifeadmin-images/oversikt-entry-LifeAdmin.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="lifeadmin-images/oversikt-entry-LifeAdmin.png"
+                        data-lightbox-alt="Detaljvisning av en oppføring med redigering, sletting og notater"
+                        aria-label="Åpne detaljvisningen i stor visning"
                     >
                         <img
                             src="lifeadmin-images/oversikt-entry-LifeAdmin.png"
                             alt="Detaljvisning av en oppføring med redigering, sletting og notater"
                             loading="lazy"
                         >
-                    </a>
+                    </button>
 
                     <figcaption>
                         <strong>Se og endre en oppføring</strong>
@@ -202,17 +209,19 @@
                 </figure>
 
                 <figure class="lifeadmin-gallery-item lifeadmin-gallery-wide">
-                    <a
-                        href="lifeadmin-images/Kalenderoversikt-LifeAdmin.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="lifeadmin-images/Kalenderoversikt-LifeAdmin.png"
+                        data-lightbox-alt="Månedsoversikt med LifeAdmin-oppføringer plassert i en kalender"
+                        aria-label="Åpne kalenderoversikten i stor visning"
                     >
                         <img
                             src="lifeadmin-images/Kalenderoversikt-LifeAdmin.png"
                             alt="Månedsoversikt med LifeAdmin-oppføringer plassert i en kalender"
                             loading="lazy"
                         >
-                    </a>
+                    </button>
 
                     <figcaption>
                         <strong>Se oppføringene i kalenderen</strong>
@@ -224,8 +233,6 @@
             </div>
         </section>
 
-        
-
         <!-- =========================
              TESTING OG KVALITET
         ========================== -->
@@ -234,17 +241,19 @@
             <div class="lifeadmin-two-column lifeadmin-two-column-reverse">
 
                 <figure class="lifeadmin-test-figure">
-                    <a
-                        href="lifeadmin-images/Pytest-LifeAdmin.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <button
+                        class="case-image-button"
+                        type="button"
+                        data-lightbox-image="lifeadmin-images/Pytest-LifeAdmin.png"
+                        data-lightbox-alt="Terminal som viser at alle de 14 automatiserte testene består"
+                        aria-label="Åpne pytest-resultatene i stor visning"
                     >
                         <img
                             src="lifeadmin-images/Pytest-LifeAdmin.png"
                             alt="Terminal som viser at alle de 14 automatiserte testene består"
                             loading="lazy"
                         >
-                    </a>
+                    </button>
 
                     <figcaption>
                         Alle de 14 automatiserte testene bestod.
@@ -263,25 +272,35 @@
                     </p>
 
                     <div class="lifeadmin-quality-grid">
-                       <article>
-    <strong>CRUD: opprette, vise, redigere og slette</strong>
-    <span>Testene kontrollerer de viktigste handlingene for oppføringer.</span>
-</article>
 
-<article>
-    <strong>Validering</strong>
-    <span>Kontroll av tomme felt og ugyldige verdier</span>
-</article>
+                        <article>
+                            <strong>CRUD: opprette, vise, redigere og slette</strong>
+                            <span>
+                                Testene kontrollerer de viktigste handlingene for oppføringer.
+                            </span>
+                        </article>
 
-<article>
-    <strong>Notater og tags</strong>
-    <span>Legge til og slette notater og filtrere med tags</span>
-</article>
+                        <article>
+                            <strong>Validering</strong>
+                            <span>
+                                Kontroll av tomme felt og ugyldige verdier
+                            </span>
+                        </article>
 
-<article>
-    <strong>Sider og kalender</strong>
-    <span>Sjekke at sider, 404-side og kalender virker</span>
-</article>
+                        <article>
+                            <strong>Notater og tags</strong>
+                            <span>
+                                Legge til og slette notater og filtrere med tags
+                            </span>
+                        </article>
+
+                        <article>
+                            <strong>Sider og kalender</strong>
+                            <span>
+                                Sjekke at sider, 404-side og kalender virker
+                            </span>
+                        </article>
+
                     </div>
                 </div>
 
@@ -289,95 +308,100 @@
         </section>
 
         <!-- =========================
-     SIKKERHET OG VALIDERING
-========================== -->
+             SIKKERHET OG VALIDERING
+        ========================== -->
 
-<section class="case-section case-section-dark lifeadmin-security">
-    <div class="case-section-heading">
-        <span class="case-eyebrow">03 · Sikkerhet og validering</span>
-        <h2>Kontroll av data og feil</h2>
+        <section class="case-section case-section-dark lifeadmin-security">
+            <div class="case-section-heading">
+                <span class="case-eyebrow">03 · Sikkerhet og validering</span>
+                <h2>Kontroll av data og feil</h2>
 
-        <p>
-            Sikkerhet var en del av oppgaven. Jeg arbeidet derfor med
-            grunnleggende tiltak for å kontrollere det brukeren skriver inn,
-            beskytte databasen og håndtere sletting på en ryddig måte.
-        </p>
-    </div>
+                <p>
+                    Sikkerhet var en del av oppgaven. Jeg arbeidet derfor med
+                    grunnleggende tiltak for å kontrollere det brukeren skriver inn,
+                    beskytte databasen og håndtere sletting på en ryddig måte.
+                </p>
+            </div>
 
-    <div class="lifeadmin-security-grid">
-        <article>
-            <strong>Beskyttelse av databasen</strong>
-            <p>
-                Det brukeren skriver inn, behandles som innhold og ikke som
-                kommandoer som kan endre databasen.
-            </p>
-        </article>
+            <div class="lifeadmin-security-grid">
 
-        <article>
-            <strong>Kontroll av informasjon</strong>
-            <p>
-                Løsningen kontrollerer blant annet at nødvendige felt er
-                fylt ut, og at teksten ikke er for lang.
-            </p>
-        </article>
+                <article>
+                    <strong>Beskyttelse av databasen</strong>
+                    <p>
+                        Det brukeren skriver inn, behandles som innhold og ikke som
+                        kommandoer som kan endre databasen.
+                    </p>
+                </article>
 
-        <article>
-            <strong>Ryddig sletting</strong>
-            <p>
-                Når en oppføring slettes, håndteres også notater og
-                koblinger som hører til oppføringen.
-            </p>
-        </article>
-    </div>
-</section>
-<!-- =========================
-     REFLEKSJON
-========================== -->
+                <article>
+                    <strong>Kontroll av informasjon</strong>
+                    <p>
+                        Løsningen kontrollerer blant annet at nødvendige felt er
+                        fylt ut, og at teksten ikke er for lang.
+                    </p>
+                </article>
 
-<section class="case-section lifeadmin-reflection">
-    <div class="case-section-heading">
-        <span class="case-eyebrow">04 · Refleksjon</span>
-        <h2>Det jeg lærte</h2>
-    </div>
+                <article>
+                    <strong>Ryddig sletting</strong>
+                    <p>
+                        Når en oppføring slettes, håndteres også notater og
+                        koblinger som hører til oppføringen.
+                    </p>
+                </article>
 
-    <div class="lifeadmin-reflection-grid">
-        <article>
-            <h3>Fra teori til praksis</h3>
+            </div>
+        </section>
 
-            <p>
-                LifeAdmin ga meg praktisk erfaring med hvordan Python,
-                Flask, Jinja og en database brukes sammen i en
-                webapplikasjon. Gjennom prosjektet fikk jeg bedre
-                forståelse for hvordan de ulike delene påvirker hverandre.
-            </p>
+        <!-- =========================
+             REFLEKSJON
+        ========================== -->
 
-            <p>
-                Jeg opplever backend som utfordrende, men også spennende
-                fordi det alltid vil være mer å lære. Jeg likte
-                problemløsningen underveis og kjente på en stor
-                mestringsfølelse da jeg fikk CRUD-funksjonene for å
-                opprette, vise, redigere og slette oppføringer til å
-                fungere.
-            </p>
-        </article>
+        <section class="case-section lifeadmin-reflection">
+            <div class="case-section-heading">
+                <span class="case-eyebrow">04 · Refleksjon</span>
+                <h2>Det jeg lærte</h2>
+            </div>
 
-        <article class="lifeadmin-reflection-highlight">
-            <h3>KI som sparringspartner</h3>
+            <div class="lifeadmin-reflection-grid">
 
-            <p>
-                Jeg brukte KI aktivt for å forstå syntaks og feilmeldinger,
-                diskutere mulige løsninger og komme videre når jeg stod fast.
-            </p>
+                <article>
+                    <h3>Fra teori til praksis</h3>
 
-            <p>
-                En viktig erfaring var at forslagene alltid måtte vurderes
-                i sammenheng med resten av løsningen. Ved å teste, tilpasse
-                og undersøke resultatene lærte jeg å bruke KI som en
-                sparringspartner og ikke som en fasit.
-            </p>
-        </article>
-    </div>
-</section>
+                    <p>
+                        LifeAdmin ga meg praktisk erfaring med hvordan Python,
+                        Flask, Jinja og en database brukes sammen i en
+                        webapplikasjon. Gjennom prosjektet fikk jeg bedre
+                        forståelse for hvordan de ulike delene påvirker hverandre.
+                    </p>
+
+                    <p>
+                        Jeg opplever backend som utfordrende, men også spennende
+                        fordi det alltid vil være mer å lære. Jeg likte
+                        problemløsningen underveis og kjente på en stor
+                        mestringsfølelse da jeg fikk CRUD-funksjonene for å
+                        opprette, vise, redigere og slette oppføringer til å
+                        fungere.
+                    </p>
+                </article>
+
+                <article class="lifeadmin-reflection-highlight">
+                    <h3>KI som sparringspartner</h3>
+
+                    <p>
+                        Jeg brukte KI aktivt for å forstå syntaks og feilmeldinger,
+                        diskutere mulige løsninger og komme videre når jeg stod fast.
+                    </p>
+
+                    <p>
+                        En viktig erfaring var at forslagene alltid måtte vurderes
+                        i sammenheng med resten av løsningen. Ved å teste, tilpasse
+                        og undersøke resultatene lærte jeg å bruke KI som en
+                        sparringspartner og ikke som en fasit.
+                    </p>
+                </article>
+
+            </div>
+        </section>
 
         <!-- =========================
              NESTE PROSJEKT
@@ -410,6 +434,28 @@
         <p>© 2026 Nina Finstad</p>
         <p>Design og utvikling: Nina Finstad</p>
     </footer>
+
+    <!-- =========================
+         BILDEFORSTØRRELSE
+    ========================== -->
+
+    <dialog id="case-lightbox" class="case-lightbox">
+        <button
+            id="case-lightbox-close"
+            class="case-lightbox-close"
+            type="button"
+            aria-label="Lukk bildet"
+        >
+            ×
+        </button>
+
+        <img
+            id="case-lightbox-image"
+            class="case-lightbox-image"
+            src=""
+            alt=""
+        >
+    </dialog>
 
 </body>
 </html>

@@ -862,7 +862,7 @@ body {
 
 .project-meta-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -1859,7 +1859,7 @@ body {
 .lifeadmin-technical-text > p {
     margin-bottom: 26px;
     color: #555;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.75;
 }
 
@@ -2032,7 +2032,7 @@ body {
 
 .lifeadmin-reflection-grid p {
     color: #555;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.75;
 }
 
@@ -2101,6 +2101,260 @@ body {
     }
 
     .lifeadmin-reflection-grid p {
-        font-size: 16px;
+        font-size: 18px;
     }
+}
+
+/* =========================================================
+   MATFLYT – SEKSJON 03–08
+========================================================= */
+
+
+/* =========================================================
+   03 · ITERASJON
+========================================================= */
+
+.matflyt-iteration .case-two-column {
+    align-items: start;
+}
+
+.matflyt-iteration-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.matflyt-iteration-figure {
+    margin: 0;
+    min-width: 0;
+}
+
+.matflyt-iteration-figure .case-image-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.matflyt-iteration-figure .case-image-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.matflyt-iteration-figure img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+}
+
+.matflyt-iteration-figure figcaption {
+    margin-top: 12px;
+}
+
+
+/* =========================================================
+   04 · DESIGNSYSTEM
+========================================================= */
+
+.matflyt-design-system .case-two-column {
+    align-items: center;
+}
+
+.matflyt-system-figure {
+    margin: 0;
+    min-width: 0;
+}
+
+.matflyt-system-figure .case-image-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.matflyt-system-figure img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+}
+
+.matflyt-system-figure figcaption {
+    margin-top: 14px;
+}
+
+
+/* =========================================================
+   05 · KOMPONENTER
+========================================================= */
+
+.matflyt-components .case-section-heading {
+    margin-bottom: 48px;
+}
+
+.matflyt-component-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.matflyt-component-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-width: 0;
+    overflow: hidden;
+
+    border: 1px solid rgba(41, 40, 61, 0.12);
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.matflyt-component-card .case-image-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 220px;
+    padding: 14px;
+
+    border: 0;
+    background: #f7f7f7;
+    cursor: zoom-in;
+}
+
+.matflyt-component-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.matflyt-component-card figcaption {
+    flex: 1;
+    padding: 18px 20px 22px;
+}
+
+.matflyt-component-card figcaption strong {
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   06 · MOBILREISE
+========================================================= */
+
+.matflyt-final-flow .case-carousel-heading > div:first-child {
+    max-width: 760px;
+}
+
+.matflyt-final-flow .case-carousel-heading p {
+    margin-top: 16px;
+}
+
+
+/* =========================================================
+   RESPONSIVT
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .matflyt-component-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .matflyt-iteration-images {
+        grid-template-columns: 1fr;
+    }
+
+    .matflyt-iteration-figure img {
+        height: 270px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .matflyt-iteration .case-two-column,
+    .matflyt-design-system .case-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .matflyt-iteration-images {
+        margin-top: 12px;
+    }
+
+    .matflyt-system-figure {
+        margin-top: 12px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .matflyt-component-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .matflyt-component-card .case-image-button {
+        height: 200px;
+    }
+
+    .matflyt-iteration-figure img {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .matflyt-system-figure img {
+        max-height: 320px;
+    }
+}
+
+/* =========================================================
+   MATFLYT – HERO-BILDE
+========================================================= */
+
+.matflyt-hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px 45px;
+    overflow: hidden;
+}
+
+.matflyt-hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    max-height: 560px;
+    object-fit: contain;
+}
+
+/* =========================================================
+   MATFLYT – MØRK DESIGNSYSTEM-SEKSJON
+========================================================= */
+
+.matflyt-design-system {
+    background: #292941;
+    color: #ffffff;
+}
+
+.matflyt-design-system h2 {
+    color: #ffffff;
+}
+
+.matflyt-design-system p {
+    color: #ffffff;
+}
+
+.matflyt-design-system figcaption {
+    color: #ffffff;
+}
+
+.matflyt-design-system .case-eyebrow {
+    color: #9b91ff;
 }
