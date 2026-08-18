@@ -1,101 +1,55 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // =========================
-    // BILDEFORSTØRRELSE
-    // =========================
+const contactForm = document.getElementById("contact-form");
+const successMessage = document.getElementById("form-success");
+const errorMessage = document.getElementById("form-error");
+const submitButton = contactForm.querySelector(".form-submit");
+const originalButtonText = submitButton.textContent;
 
-    const lightbox = document.querySelector("#case-lightbox");
-    const lightboxImage = document.querySelector("#case-lightbox-image");
-    const lightboxClose = document.querySelector("#case-lightbox-close");
-    const imageButtons = document.querySelectorAll("[data-lightbox-image]");
+let statusTimer;
 
-    if (lightbox && lightboxImage && lightboxClose) {
-        imageButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-                lightboxImage.src = button.dataset.lightboxImage;
-                lightboxImage.alt = button.dataset.lightboxAlt || "";
+function hideStatusMessages() {
+    clearTimeout(statusTimer);
+    successMessage.hidden = true;
+    errorMessage.hidden = true;
+}
 
-                lightbox.showModal();
+contactForm.addEventListener("input", hideStatusMessages);
+
+contactForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    hideStatusMessages();
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Sender...";
+
+    try {
+        const response = await fetch(contactForm.action, {
+            method: contactForm.method,
+            body: new FormData(contactForm),
+            headers: {
+                Accept: "application/json"
+            }
+        });
+
+        if (response.ok) {
+            contactForm.reset();
+            successMessage.hidden = false;
+
+            successMessage.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
             });
-        });
 
-        lightboxClose.addEventListener("click", () => {
-            lightbox.close();
-        });
-
-        lightbox.addEventListener("click", (event) => {
-            const dialogArea = lightbox.getBoundingClientRect();
-
-            const clickedOutside =
-                event.clientX < dialogArea.left ||
-                event.clientX > dialogArea.right ||
-                event.clientY < dialogArea.top ||
-                event.clientY > dialogArea.bottom;
-
-            if (clickedOutside) {
-                lightbox.close();
-            }
-        });
-
-        lightbox.addEventListener("close", () => {
-            lightboxImage.src = "";
-            lightboxImage.alt = "";
-        });
-    }
-
-    // =========================
-    // MOBILKARUSELL
-    // =========================
-
-    const carousel = document.querySelector("#highsoft-carousel");
-    const previousButton = document.querySelector("#carousel-previous");
-    const nextButton = document.querySelector("#carousel-next");
-
-    if (carousel && previousButton && nextButton) {
-        const getScrollDistance = () => {
-            const firstSlide = carousel.querySelector(".case-carousel-slide");
-
-            if (!firstSlide) {
-                return carousel.clientWidth;
-            }
-
-            const carouselStyles = window.getComputedStyle(carousel);
-            const gap = Number.parseFloat(carouselStyles.columnGap) || 0;
-
-            return firstSlide.getBoundingClientRect().width + gap;
-        };
-
-        previousButton.addEventListener("click", () => {
-            carousel.scrollBy({
-                left: -getScrollDistance(),
-                behavior: "smooth"
-            });
-        });
-
-        nextButton.addEventListener("click", () => {
-            carousel.scrollBy({
-                left: getScrollDistance(),
-                behavior: "smooth"
-            });
-        });
-
-        carousel.addEventListener("keydown", (event) => {
-            if (event.key === "ArrowLeft") {
-                event.preventDefault();
-
-                carousel.scrollBy({
-                    left: -getScrollDistance(),
-                    behavior: "smooth"
-                });
-            }
-
-            if (event.key === "ArrowRight") {
-                event.preventDefault();
-
-                carousel.scrollBy({
-                    left: getScrollDistance(),
-                    behavior: "smooth"
-                });
-            }
-        });
+            statusTimer = setTimeout(function () {
+                successMessage.hidden = true;
+            }, 8000);
+        } else {
+            errorMessage.hidden = false;
+        }
+    } catch (error) {
+        errorMessage.hidden = false;
+    } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
     }
 });
