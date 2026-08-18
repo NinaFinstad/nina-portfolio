@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="nb">
+
 <head>
     <!-- Basic setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Nina Finstad Portefølje</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    
->
-<script src="js/contact-form.js" defer></script>
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- JavaScript -->
+    <script src="js/contact-form.js" defer></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!-- Header -->
-<header class="site-header">
-    <div class="logo">
-        <a href="index.html" class="logo-link">
-            <span class="logo-short">NF</span>
-            <span class="logo-full">Nina Finstad</span>
-        </a>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <span class="logo-short">NF</span>
+                <span class="logo-full">Nina Finstad</span>
+            </a>
+        </div>
+
+        <nav class="site-nav">
+            <a href="index.html#projects">Prosjekter</a>
+            <a href="index.html#about">Om meg</a>
+            <a href="index.html#contact">Kontakt</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+       <div class="hero-text">
+
+    <div class="hero-intro-heading">
+        <p class="hero-name">Nina Finstad</p>
+        <p class="hero-role">Teknologi · UX · digital utvikling</p>
     </div>
 
-    <nav class="site-nav">
-        <a href="index.html#projects">Prosjekter</a>
-        <a href="index.html#about">Om meg</a>
-        <a href="index.html#contact">Kontakt</a>
-    </nav>
-</header>
+    <p class="hero-intro">
+    Jeg kombinerer teknologiforståelse med lang erfaring fra virksomhetsdrift og brukerbehov.
+    Jeg er nysgjerrig på hvordan teknologi kan løse reelle problemer, og motiveres av å lære,
+    utforske og utvikle løsninger som skaper verdi i praksis.
+    </p> 
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>
-            Hei, jeg er <span class="name">Nina</span>.
-            </h1>
+</div>
 
-            <p>
-                Jeg kombinerer teknologiforståelse med lang erfaring fra virksomhetsdrift, brukerbehov og formidling. Jeg liker å forstå reelle utfordringer og utvikle digitale løsninger som er praktiske, brukervennlige og skaper nytte for både mennesker og virksomheter.
-            </p>
-
-            <a href="#projects" class="hero-link">Se prosjektene mine</a>
-        </div>
 
         <div class="hero-image">
-            <img src="images/nina.jpg" alt="Portrett av Nina Finstad">
+            <img
+                src="images/nina.jpg"
+                alt="Portrett av Nina Finstad"
+            >
         </div>
+
     </section>
 
+
+    <!-- =========================
+         UTVALGTE PROSJEKTER
+    ========================== -->
     
     <!-- Projects -->
 <section id="projects" class="projects-section">
@@ -136,20 +170,36 @@
 
         <div class="about-text">
             <p>
-               Jeg har utdanning innen digital transformasjon, kunstig intelligens, 
-               prosjektledelse, UX/UI og web- og apputvikling. 
-               Gjennom studier og prosjekter har jeg arbeidet med hele utviklingsprosessen,
-                fra brukerinnsikt og behovskartlegging til design, utvikling og testing. 
-            </p>
-
-
-            <p>
-                Før jeg gikk inn i teknologifaget, drev og utviklet jeg egen virksomhet i mer enn 20 år. Erfaringen har gitt meg sterk forretningsforståelse og lært meg å arbeide strukturert, kommunisere med ulike mennesker og finne løsninger på reelle behov.
+                 Jeg har mer enn 20 års erfaring med å drive og utvikle egen virksomhet.
+                 Det har gitt meg solid forretningsforståelse og lang erfaring med mennesker,
+                 behov, problemløsning og det å få ideer til å fungere i praksis.
             </p>
 
             <p>
-                Jeg er særlig opptatt av samspillet mellom mennesker, teknologi og arbeidsprosesser. Det motiverer meg å utvikle løsninger som er enkle å forstå, nyttige i praksis og skaper verdi for både brukere og virksomheter.
+                De siste årene har jeg bygget videre på denne erfaringen med utdanning innen
+                digital transformasjon, kunstig intelligens, prosjektledelse, UX/UI og
+                web- og apputvikling. Gjennom studier og prosjekter har jeg jobbet med hele
+                utviklingsprosessen, fra brukerinnsikt og behovskartlegging til design,
+                utvikling og testing.
             </p>
+
+             <p>
+                    Det som virkelig engasjerer meg, er mulighetene som åpner seg i møtet
+                    mellom mennesker, teknologi og kunstig intelligens. Jeg synes det er
+                    utrolig spennende å se hvordan nye løsninger kan forenkle arbeidsprosesser,
+                    løse reelle problemer og gjøre hverdagen både enklere og mer effektiv.
+                    Teknologien utvikler seg raskt, og mange av løsningene vi kommer til å
+                    bruke i fremtiden finnes ikke ennå. Det er nettopp det som gjør dette
+                    feltet så spennende for meg, og jeg har lyst til å være en del av utviklingen.
+             </p>
+
+             <p>
+                Jeg er nysgjerrig av natur og liker å forstå hvordan ting fungerer,
+                stille spørsmål og lete etter bedre måter å løse problemer på. Når noe
+                interesserer meg, lærer jeg raskt og går gjerne grundig inn i det.
+                Jeg trives også godt sammen med andre og ser frem til å bruke erfaringen
+                og kompetansen min i et team der jeg både kan bidra, lære og utvikle meg videre.
+             </p>
         </div>
     </section>
 
