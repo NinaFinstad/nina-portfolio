@@ -2144,6 +2144,145 @@ body {
 }
 
 /* =========================================================
+   MATFLYT – SEKSJON 01–02
+========================================================= */
+
+
+/* =========================================================
+   01 · BEHOVET
+========================================================= */
+
+.matflyt-insight {
+    background: #ffffff;
+}
+
+.matflyt-insight-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.8fr);
+    gap: 72px;
+    align-items: center;
+}
+
+.matflyt-insight-text {
+    max-width: 650px;
+}
+
+.matflyt-insight-text h2 {
+    margin-bottom: 28px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 52px;
+    line-height: 1.05;
+    color: #333333;
+}
+
+.matflyt-insight-text p {
+    margin-bottom: 20px;
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.matflyt-survey-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    padding: 18px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+}
+
+.matflyt-survey-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.matflyt-problem-box {
+    margin-top: 56px;
+    padding: 32px 40px;
+    border: 1px solid #e6e6e6;
+    border-left: 4px solid #7e7bd6;
+    border-radius: 8px;
+    background: #f6f6f6;
+}
+
+.matflyt-problem-box p {
+    max-width: 1000px;
+    margin: 0;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 30px;
+    line-height: 1.25;
+    color: #333333;
+}
+
+/* =========================================================
+   02 · FRA INNSIKT TIL LØSNING
+========================================================= */
+
+.matflyt-solution {
+    background: #f6f6f6;
+}
+
+.matflyt-solution .case-section-heading {
+    max-width: 760px;
+}
+
+.matflyt-solution-grid {
+    display: grid;
+    grid-template-columns: minmax(380px, 0.9fr) minmax(0, 1fr);
+    gap: 80px;
+    align-items: center;
+    margin-top: 44px;
+}
+.matflyt-solution-images {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+}
+
+.matflyt-solution-text {
+    max-width: 650px;
+}
+
+.matflyt-solution-text h3 {
+    margin-bottom: 16px;
+    color: #333333;
+    font-size: 21px;
+}
+
+.matflyt-solution-text p {
+    margin-bottom: 20px;
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.matflyt-solution-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 18px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+}
+
+.matflyt-solution-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+/* =========================================================
    MATFLYT – SEKSJON 03–08
 ========================================================= */
 
@@ -2152,44 +2291,61 @@ body {
    03 · ITERASJON
 ========================================================= */
 
-.matflyt-iteration .case-two-column {
-    align-items: start;
-}
-
 .matflyt-iteration-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 32px;
     align-items: start;
 }
+
 
 .matflyt-iteration-figure {
     margin: 0;
     min-width: 0;
 }
 
+
 .matflyt-iteration-figure .case-image-label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    text-align: center;
 }
 
+
 .matflyt-iteration-figure .case-image-button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 0;
+    height: 400px;
+    padding: 24px;
+    overflow: hidden;
+    background: #eef1f1;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
+
 
 .matflyt-iteration-figure img {
     display: block;
-    width: 100%;
-    height: 230px;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0 auto;
     object-fit: contain;
 }
 
-.matflyt-iteration-figure figcaption {
-    margin-top: 12px;
-}
 
+.matflyt-iteration-figure figcaption {
+    max-width: 340px;
+    margin: 14px auto 0;
+    text-align: center;
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.6;
+}
 
 /* =========================================================
    04 · DESIGNSYSTEM
@@ -2348,6 +2504,32 @@ body {
 
     .matflyt-system-figure img {
         max-height: 320px;
+    }
+}
+
+@media (max-width: 900px) {
+    .matflyt-insight-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .matflyt-survey-image {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .matflyt-insight-text h2 {
+        font-size: 40px;
+    }
+
+    .matflyt-problem-box {
+        padding: 26px 24px;
+    }
+
+    .matflyt-problem-box p {
+        font-size: 26px;
     }
 }
 
